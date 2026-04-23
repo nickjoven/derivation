@@ -14,37 +14,43 @@ of [`harmonics`](https://github.com/nickjoven/harmonics) and
 under the editorial filter "if it wouldn't be taught, it doesn't go
 here" (see `CLAUDE.md`).
 
-Content present (20 entries):
+Content present (22 entries):
 
 - 4 axiomatic primitives (mathematical).
 - 2 amplitude anchors (observational, Type 1 of the inputs taxonomy).
-- 6 definitions.
+- 1 topology commitment (`sl2r_manifold`, the gravitational
+  substrate; introduced with Proof A).
+- 7 definitions.
 - 7 theorems.
+- 1 proof chain (`proof_A_gravity`, 8 propositions primitives →
+  Einstein field equations).
 - 1 foundations document (`inputs_taxonomy.md`) — the six-type input
   scheme (amplitude / ratio / topology / identification / phase /
   universal), with the musical analogy and the composition rules.
 
 Schema-ready but unpopulated:
-`topology_commitment`, `identification`, `phase_label`,
-`universal_constant`.  These will be populated as proofs and
-predictions that consume them are ported.
+`identification`, `phase_label`, `universal_constant`.  These will be
+populated as proofs and predictions that consume them are ported.
 
 ## What's next
 
 Ordered queue, one commit per item unless noted:
 
-1. `proof_A_gravity.md` — 8-proposition Einstein chain.
-2. `proof_B_quantum.md` — 6-proposition Schrödinger + Born chain,
-   shares P1–P5 with A.
-3. `proof_C_bridge.md` — 7-proposition Λ → a₀ chain
+1. `proof_B_quantum.md` — 6-proposition Schrödinger + Born chain,
+   shares P1–P5 with Proof A at the dynamical level (different
+   coupling regime $K < 1$).  Reuses the `sl2r_manifold`
+   topology_commitment.
+2. `proof_C_bridge.md` — 7-proposition Λ → a₀ chain
    (proslambenomenos source).
-4. First `identification` entry (gauge sector-to-mode mapping).
-5. Predictions layer (~15 entries).
-6. Open questions (at least `v_over_MP_gap`, `anchor_audit`).
-7. Proslambenomenos-specific lemmas (Kuramoto–Einstein mapping,
+3. First `identification` entry (gauge sector-to-mode mapping).  Will
+   also introduce a Klein-quotient topology_commitment distinct from
+   `sl2r_manifold`.
+4. Predictions layer (~15 entries).
+5. Open questions (at least `v_over_MP_gap`, `anchor_audit`).
+6. Proslambenomenos-specific lemmas (Kuramoto–Einstein mapping,
    Lyapunov uniqueness, Renzo's Rule).
-8. Substrate seeding in `.ket/`.
-9. Pages workflow (optional, defer).
+7. Substrate seeding in `.ket/`.
+8. Pages workflow (optional, defer).
 
 ## Register
 
