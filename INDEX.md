@@ -1,6 +1,6 @@
 # Index
 
-Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **44**.  Regenerate via `python3 scripts/build_index.py`.
+Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **46**.  Regenerate via `python3 scripts/build_index.py`.
 
 ## Axiomatic primitives (mathematical) (4)
 
@@ -49,7 +49,7 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Rational field equation](derivations/rational_field_equation.md) | active | &mdash; | `integers`, `fixed_point`, `stern_brocot`, `arnold_tongue` |
 | [Stern-Brocot tree](derivations/stern_brocot.md) | active | &mdash; | `integers`, `mediant` |
 
-## Theorems (8)
+## Theorems (9)
 
 | Entry | Status | Input types | Depends on |
 |-------|--------|-------------|------------|
@@ -61,6 +61,7 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Lie group characterization](derivations/lie_group_characterization.md) | active | &mdash; | `mediant`, `three_dimensions` |
 | [Minkowski signature](derivations/minkowski_signature.md) | active | &mdash; | `three_dimensions`, `klein_bottle`, `lie_group_characterization` |
 | [Three dimensions](derivations/three_dimensions.md) | active | &mdash; | `integers`, `mediant`, `fixed_point` |
+| [Yang-Mills dynamics from Utiyama uniqueness](derivations/yang_mills.md) | active | 3, 4 | `gauge_group`, `gauge_identification`, `klein_substrate`, `minkowski_signature`, `three_dimensions` |
 
 ## Proof chains (3)
 
@@ -70,7 +71,7 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Proof B: primitives to the Schrödinger equation and the Born rule](derivations/proof_B_quantum.md) | active | 3 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `sl2r_manifold`, `proof_A_gravity` |
 | [Proof C: the bridge](derivations/proof_C_bridge.md) | active | 1, 3, 6 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `farey_sequence`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `klein_bottle`, `hubble`, `sl2r_manifold`, `klein_substrate`, `golden_ratio`, `farey_partition`, `hierarchy`, `dark_energy`, `mond_scale`, `proof_A_gravity` |
 
-## Predictions (12)
+## Predictions (13)
 
 | Entry | Status | Input types | Depends on |
 |-------|--------|-------------|------------|
@@ -85,6 +86,7 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Lorentz symmetry](derivations/lorentz_symmetry.md) | active | 3 | `three_dimensions`, `minkowski_signature`, `sl2r_manifold`, `lie_group_characterization` |
 | [MOND acceleration scale](derivations/mond_scale.md) | active | 1, 3, 6 | `hubble`, `klein_substrate`, `farey_partition`, `hierarchy`, `golden_ratio`, `rational_field_equation`, `continuum_limits` |
 | [Spatial dimension](derivations/spatial_dimension.md) | active | 3 | `three_dimensions`, `sl2r_manifold`, `lie_group_characterization` |
+| [Heisenberg uncertainty](derivations/uncertainty.md) | active | 3 | `proof_B_quantum`, `continuum_limits`, `rational_field_equation`, `parabola` |
 | [Vacuum energy](derivations/vacuum_energy.md) | active | 1, 3 | `hierarchy`, `hierarchy_ratio`, `farey_partition`, `hubble`, `klein_substrate` |
 
 ## Open questions (4)

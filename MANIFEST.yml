@@ -4,7 +4,7 @@
 # For the taxonomy of input types, see derivations/inputs_taxonomy.md.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 44
+entries_scanned: 46
 free_parameters: 0
 free_functions: 0
 inputs:
@@ -152,6 +152,17 @@ predictions:
       \ constraints to ~50 \u03BCm from Hoyle et al., large-scale from CMB and galaxy\
       \ surveys)"
     residual: exact at the level of the claim
+- stem: uncertainty
+  title: Heisenberg uncertainty
+  input_types:
+  - 3
+  observables:
+  - name: Heisenberg uncertainty relation for position and momentum
+    predicted: "\u0394x \xB7 \u0394p \u2265 \u210F / 2"
+    observed: "\u0394x \xB7 \u0394p \u2265 \u210F / 2 (verified in single-photon interferometry,\
+      \ electron diffraction, cold-atom interferometry; no deviation observed to current\
+      \ precision)"
+    residual: exact
 - stem: vacuum_energy
   title: Vacuum energy
   input_types:
@@ -202,13 +213,16 @@ input_type_consumers:
   - sl2r_manifold
   - spatial_dimension
   - topology_forcing
+  - uncertainty
   - vacuum_energy
+  - yang_mills
   type_4:
   - anomaly_cancellation
   - baryon_sector_identification
   - gauge_group
   - gauge_identification
   - gell_mann_nishijima
+  - yang_mills
   type_5: []
   type_6:
   - golden_ratio
