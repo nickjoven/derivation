@@ -4,13 +4,13 @@
 # For the taxonomy of input types, see derivations/inputs_taxonomy.md.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 36
+entries_scanned: 40
 free_parameters: 0
 free_functions: 0
 inputs:
   dimensionful_anchors_count: 2
   topology_commitments_count: 2
-  identification_maps_count: 0
+  identification_maps_count: 1
   phase_labels_count: 0
   universal_constants_count: 1
   axiom_primitives_count: 4
@@ -24,7 +24,9 @@ topology_commitments:
   title: Klein-quotient substrate commitment
 - stem: sl2r_manifold
   title: SL(2, R) manifold commitment
-identifications: []
+identifications:
+- stem: gauge_identification
+  title: Gauge-sector identification
 phase_labels: []
 universal_constants:
 - stem: golden_ratio
@@ -39,6 +41,17 @@ primitives:
 - stem: parabola
   title: Parabola
 predictions:
+- stem: anomaly_cancellation
+  title: Anomaly cancellation
+  input_types:
+  - 3
+  - 4
+  observables:
+  - name: Sum of six SM triangle anomaly conditions
+    predicted: 0 exactly, per generation
+    observed: 0 (Standard Model is anomaly-free per generation; confirmed by consistency
+      of gauge theory and by all precision electroweak tests)
+    residual: exact
 - stem: baryon_fraction
   title: Baryon fraction
   input_types:
@@ -85,6 +98,17 @@ predictions:
     predicted: 5 / 1 = 5
     observed: "5.37 \xB1 0.07 (Planck 2018)"
     residual: "~7% (~5\u03C3)"
+- stem: gauge_group
+  title: Standard Model gauge group
+  input_types:
+  - 3
+  - 4
+  observables:
+  - name: Standard Model gauge group
+    predicted: "SU(3) \xD7 SU(2)_L \xD7 U(1)_Y"
+    observed: "SU(3)_c \xD7 SU(2)_L \xD7 U(1)_Y (Standard Model, verified in every\
+      \ precision test since the 1970s)"
+    residual: exact at the level of group identity
 - stem: hierarchy_ratio
   title: Planck-to-Hubble hierarchy
   input_types:
@@ -148,12 +172,15 @@ input_type_consumers:
   - vacuum_energy
   type_2: []
   type_3:
+  - anomaly_cancellation
   - baryon_fraction
   - born_rule
   - dark_energy
   - dark_matter_fraction
   - dm_baryon_ratio
   - farey_partition
+  - gauge_group
+  - gell_mann_nishijima
   - hierarchy
   - hierarchy_ratio
   - klein_substrate
@@ -165,7 +192,11 @@ input_type_consumers:
   - sl2r_manifold
   - spatial_dimension
   - vacuum_energy
-  type_4: []
+  type_4:
+  - anomaly_cancellation
+  - gauge_group
+  - gauge_identification
+  - gell_mann_nishijima
   type_5: []
   type_6:
   - golden_ratio
