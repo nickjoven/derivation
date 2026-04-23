@@ -1,5 +1,7 @@
-.ket/dolt
-.ket/manifest
+# ket substrate: commit the ledger (CAS + log + config + manifest), ignore
+# the Dolt SQL index (derived state — rebuilds via `ket repair`).
+.ket/ket.db/
+
 __pycache__/
 *.pyc
 .DS_Store
