@@ -1,0 +1,230 @@
+# MANIFEST.yml
+# Generated from derivations/*.md frontmatter.  Do not edit by hand --
+# edit the source entries and re-run scripts/build_manifest.py.
+# For the taxonomy of input types, see derivations/inputs_taxonomy.md.
+
+generated_by: scripts/build_manifest.py
+entries_scanned: 46
+free_parameters: 0
+free_functions: 0
+inputs:
+  dimensionful_anchors_count: 2
+  topology_commitments_count: 2
+  identification_maps_count: 1
+  phase_labels_count: 0
+  universal_constants_count: 1
+  axiom_primitives_count: 4
+anchors:
+- stem: hubble
+  title: Hubble anchor
+- stem: vev
+  title: Electroweak vacuum anchor
+topology_commitments:
+- stem: klein_substrate
+  title: Klein-quotient substrate commitment
+- stem: sl2r_manifold
+  title: SL(2, R) manifold commitment
+identifications:
+- stem: gauge_identification
+  title: Gauge-sector identification
+phase_labels: []
+universal_constants:
+- stem: golden_ratio
+  title: Golden ratio
+primitives:
+- stem: fixed_point
+  title: Fixed point
+- stem: integers
+  title: Integers
+- stem: mediant
+  title: Mediant
+- stem: parabola
+  title: Parabola
+predictions:
+- stem: anomaly_cancellation
+  title: Anomaly cancellation
+  input_types:
+  - 3
+  - 4
+  observables:
+  - name: Sum of six SM triangle anomaly conditions
+    predicted: 0 exactly, per generation
+    observed: 0 (Standard Model is anomaly-free per generation; confirmed by consistency
+      of gauge theory and by all precision electroweak tests)
+    residual: exact
+- stem: baryon_fraction
+  title: Baryon fraction
+  input_types:
+  - 3
+  observables:
+  - name: "Baryon fraction \u03A9_b"
+    predicted: "1 / 19 \u2248 0.05263"
+    observed: "0.0493 \xB1 0.0006 (Planck 2018)"
+    residual: "~5% (~5.6\u03C3)"
+- stem: born_rule
+  title: Born rule
+  input_types:
+  - 3
+  observables:
+  - name: "Born-rule exponent in P = |\u03C8|^\u03B1"
+    predicted: "\u03B1 = 2"
+    observed: "\u03B1 = 2 (two-slit interference, Bell tests, quantum tomography;\
+      \ no deviation detected)"
+    residual: exact
+- stem: dark_energy
+  title: Dark-energy fraction
+  input_types:
+  - 3
+  observables:
+  - name: "Dark-energy fraction \u03A9_\u039B"
+    predicted: '|F_6| / |F_7| = 13 / 19 = 0.684211...'
+    observed: "0.6847 \xB1 0.0073 (Planck 2018)"
+    residual: "0.07\u03C3"
+- stem: dark_matter_fraction
+  title: Dark-matter fraction
+  input_types:
+  - 3
+  observables:
+  - name: "Dark-matter fraction \u03A9_DM"
+    predicted: "5 / 19 \u2248 0.2632"
+    observed: "0.265 \xB1 0.007 (Planck 2018)"
+    residual: "~0.2\u03C3"
+- stem: dm_baryon_ratio
+  title: Dark-matter to baryon ratio
+  input_types:
+  - 3
+  observables:
+  - name: "Dark-matter to baryon ratio \u03A9_DM / \u03A9_b"
+    predicted: 5 / 1 = 5
+    observed: "5.37 \xB1 0.07 (Planck 2018)"
+    residual: "~7% (~5\u03C3)"
+- stem: gauge_group
+  title: Standard Model gauge group
+  input_types:
+  - 3
+  - 4
+  observables:
+  - name: Standard Model gauge group
+    predicted: "SU(3) \xD7 SU(2)_L \xD7 U(1)_Y"
+    observed: "SU(3)_c \xD7 SU(2)_L \xD7 U(1)_Y (Standard Model, verified in every\
+      \ precision test since the 1970s)"
+    residual: exact at the level of group identity
+- stem: hierarchy_ratio
+  title: Planck-to-Hubble hierarchy
+  input_types:
+  - 1
+  - 3
+  observables:
+  - name: Planck-to-Hubble length ratio R
+    predicted: "q_2 * q_3 * |F_6|^(q_2 * q_3^d) = 6 * 13^54 \u2248 8.533e60"
+    observed: "~8.49e60 (Planck 2018 \u2113_H; \u2113_P from G, \u210F, c)"
+    residual: ~0.48%
+- stem: lorentz_symmetry
+  title: Lorentz symmetry
+  input_types:
+  - 3
+  observables:
+  - name: Spacetime symmetry group
+    predicted: SO^+(3,1) / Spin(3,1) (Lorentz symmetry, signature (3,1))
+    observed: "Lorentz invariance upheld in every precision test; SME parameters bounded\
+      \ at \u2272 10^-20 for the best-constrained coefficients (Kostelecky & Russell\
+      \ 2011, and continuing)"
+    residual: exact at the level of structure; violations bounded, not observed
+- stem: mond_scale
+  title: MOND acceleration scale
+  input_types:
+  - 1
+  - 3
+  - 6
+  observables:
+  - name: MOND acceleration scale a_0
+    predicted: "c * H_0 / (2 * pi * sqrt(g_*(1/varphi))) \u2248 1.25e-10 m/s^2"
+    observed: "1.2e-10 m/s^2 \xB1 0.1e-10 (McGaugh et al. 2016)"
+    residual: ~4% relative to observed central value
+- stem: spatial_dimension
+  title: Spatial dimension
+  input_types:
+  - 3
+  observables:
+  - name: Number of large spatial dimensions
+    predicted: 3
+    observed: "3 (consistent with all tests of Newtonian/GR geometry; short-distance\
+      \ constraints to ~50 \u03BCm from Hoyle et al., large-scale from CMB and galaxy\
+      \ surveys)"
+    residual: exact at the level of the claim
+- stem: uncertainty
+  title: Heisenberg uncertainty
+  input_types:
+  - 3
+  observables:
+  - name: Heisenberg uncertainty relation for position and momentum
+    predicted: "\u0394x \xB7 \u0394p \u2265 \u210F / 2"
+    observed: "\u0394x \xB7 \u0394p \u2265 \u210F / 2 (verified in single-photon interferometry,\
+      \ electron diffraction, cold-atom interferometry; no deviation observed to current\
+      \ precision)"
+    residual: exact
+- stem: vacuum_energy
+  title: Vacuum energy
+  input_types:
+  - 1
+  - 3
+  observables:
+  - name: Vacuum energy density in Planck units
+    predicted: "\u039B \u2113_P^2 = 13^(-108) / 12 \u2248 4.4e-122"
+    observed: "\u039B \u2113_P^2 \u2248 (1.1e-52 m^-2) * (1.616e-35 m)^2 \u2248 2.9e-122"
+    residual: "~50% on the bare number (i.e., 0.1\u20130.2% in the log-exponent)"
+open_questions:
+- stem: anchor_audit
+  title: Anchor audit
+- stem: baryon_sector_identification
+  title: Cosmological-sector identification for the {5, 1} orbits
+- stem: topology_forcing
+  title: Can the topology commitments be forced?
+- stem: v_over_MP_gap
+  title: The electroweak-to-Planck gap
+input_type_consumers:
+  type_1:
+  - anchor_audit
+  - hierarchy
+  - hierarchy_ratio
+  - mond_scale
+  - proof_C_bridge
+  - v_over_MP_gap
+  - vacuum_energy
+  type_2: []
+  type_3:
+  - anomaly_cancellation
+  - baryon_fraction
+  - born_rule
+  - dark_energy
+  - dark_matter_fraction
+  - dm_baryon_ratio
+  - farey_partition
+  - gauge_group
+  - gell_mann_nishijima
+  - hierarchy
+  - hierarchy_ratio
+  - klein_substrate
+  - lorentz_symmetry
+  - mond_scale
+  - proof_A_gravity
+  - proof_B_quantum
+  - proof_C_bridge
+  - sl2r_manifold
+  - spatial_dimension
+  - topology_forcing
+  - uncertainty
+  - vacuum_energy
+  - yang_mills
+  type_4:
+  - anomaly_cancellation
+  - baryon_sector_identification
+  - gauge_group
+  - gauge_identification
+  - gell_mann_nishijima
+  - yang_mills
+  type_5: []
+  type_6:
+  - golden_ratio
+  - mond_scale
+  - proof_C_bridge
