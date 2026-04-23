@@ -13,9 +13,10 @@ A **fixed point** of a map $f: X \to X$ is a point $x \in X$ such that
 
 $$x = f(x).$$
 
-The framework treats self-consistency — the requirement that a
-dynamical law's solution is a fixed point of the law itself — as a
-primitive, not a consequence.
+Self-consistency — the requirement that a dynamical law's solution is
+a fixed point of the law itself — is taken as primitive in the
+framework, alongside the integers, the [mediant](mediant.md), and the
+[parabola](parabola.md).
 
 ## Role
 

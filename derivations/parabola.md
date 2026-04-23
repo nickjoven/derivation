@@ -18,11 +18,10 @@ $$\dot x \;=\; \mu - x^2,$$
 with equilibria $x_\pm = \pm\sqrt{\mu}$ for $\mu \geq 0$ coalescing at
 $\mu = 0$ and vanishing for $\mu < 0$.  By the saddle-node universality
 theorem (Guckenheimer & Holmes, 1983), every local saddle-node
-bifurcation in a smooth system is smoothly conjugate to this normal
-form near the bifurcation point.
-
-The parabola $x^2 + \mu = 0$ is thus not one model among many.  It is
-the unique local structure at every saddle-node.
+bifurcation in a smooth one-parameter family is smoothly conjugate to
+this normal form near the bifurcation point.  The framework uses the
+normal form directly; no additional model-specific structure is
+introduced at saddle-nodes.
 
 ## Role
 

@@ -16,12 +16,13 @@ $$\frac{a}{b} \oplus \frac{c}{d} \;:=\; \frac{a + c}{b + d}.$$
 The mediant is not ordinary addition of fractions.  It is the
 column-sum of the matrix
 
-$$M = \begin{pmatrix} a & c \\ b & d \end{pmatrix},$$
+$$M = \begin{pmatrix} a & c \\ b & d \end{pmatrix}.$$
 
-and the operation $\oplus$ is the unique binary operation on positive
-fractions satisfying (i) strict intermediacy between its operands and
-(ii) Farey-neighbor preservation: if $|ad - bc| = 1$ then both
-$(a/b, a \oplus c/d)$ and $(a \oplus c/d, c/d)$ are Farey neighbors.
+Two properties characterize the operation.  (i) Strict intermediacy:
+$a/b \oplus c/d$ lies strictly between $a/b$ and $c/d$ whenever the
+operands are distinct.  (ii) Farey-neighbor preservation: if
+$|ad - bc| = 1$ then both $(a/b,\; a \oplus c/d)$ and
+$(a \oplus c/d,\; c/d)$ are Farey neighbors.
 
 ## Role
 

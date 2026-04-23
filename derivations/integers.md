@@ -23,7 +23,7 @@ Integers supply countability to every later construction:
 - Winding numbers distinguishing topologically inequivalent maps on
   $S^1$.
 
-No primitive below the integers is invoked.  In particular, the
-continuum is not assumed: it enters only through the
+The continuum is not introduced at this level.  Real-valued
+quantities appear elsewhere in the framework only as the
 [continuum limit](continuum_limits.md) of rational constructions as
 denominators grow without bound.
