@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: []
 depends_on: [three_dimensions, klein_bottle, lie_group_characterization]
 consequences: [proof_A_gravity]
 ---

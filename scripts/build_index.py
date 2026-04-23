@@ -22,8 +22,14 @@ DERIV_DIR = ROOT / "derivations"
 OUT_PATH = ROOT / "INDEX.md"
 
 KIND_ORDER = [
-    "axiom",
-    "anchor",
+    # Inputs (see derivations/inputs_taxonomy.md)
+    "axiom_primitive",
+    "amplitude_anchor",
+    "topology_commitment",
+    "identification",
+    "phase_label",
+    "universal_constant",
+    # Derived content
     "definition",
     "lemma",
     "theorem",
@@ -33,8 +39,12 @@ KIND_ORDER = [
 ]
 
 KIND_HEADINGS = {
-    "axiom": "Axioms (mathematical primitives)",
-    "anchor": "Anchors (observational inputs)",
+    "axiom_primitive": "Axiomatic primitives (mathematical)",
+    "amplitude_anchor": "Amplitude anchors (Type 1, observational)",
+    "topology_commitment": "Topology commitments (Type 3)",
+    "identification": "Identification maps (Type 4)",
+    "phase_label": "Phase labels (Type 5)",
+    "universal_constant": "Universal constants (Type 6, inherited)",
     "definition": "Definitions",
     "lemma": "Lemmas",
     "theorem": "Theorems",
@@ -42,13 +52,6 @@ KIND_HEADINGS = {
     "prediction": "Predictions",
     "open_question": "Open questions",
 }
-
-# Axiom entries whose stem is in this set are displayed as anchors
-# rather than as mathematical primitives.  The two categories share
-# the same `kind: axiom` frontmatter because neither has a proof; the
-# distinction is whether the input is mathematical (integers, mediant,
-# ...) or observational (hubble, vev).
-ANCHOR_STEMS = {"hubble", "vev"}
 
 
 FM_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
@@ -68,6 +71,7 @@ def parse_entry(path: Path) -> dict:
         "title": title,
         "kind": meta.get("kind", "unclassified"),
         "status": meta.get("status", "active"),
+        "input_types": meta.get("input_types", []) or [],
         "depends_on": meta.get("depends_on", []) or [],
         "consequences": meta.get("consequences", []) or [],
         "observables": meta.get("observables") or [],
@@ -77,12 +81,7 @@ def parse_entry(path: Path) -> dict:
 def render(entries: list[dict]) -> str:
     by_kind: dict[str, list[dict]] = defaultdict(list)
     for e in entries:
-        # Split axiom entries into mathematical (axiom) and
-        # observational (anchor) buckets for display.
-        if e["kind"] == "axiom" and e["stem"] in ANCHOR_STEMS:
-            by_kind["anchor"].append(e)
-        else:
-            by_kind[e["kind"]].append(e)
+        by_kind[e["kind"]].append(e)
     for arr in by_kind.values():
         arr.sort(key=lambda e: e["stem"])
 
@@ -104,14 +103,16 @@ def render(entries: list[dict]) -> str:
         heading = KIND_HEADINGS.get(kind, kind.title())
         lines.append(f"## {heading} ({len(items)})")
         lines.append("")
-        lines.append("| Entry | Status | Depends on |")
-        lines.append("|-------|--------|------------|")
+        lines.append("| Entry | Status | Input types | Depends on |")
+        lines.append("|-------|--------|-------------|------------|")
         for e in items:
             deps = ", ".join(f"`{d}`" for d in e["depends_on"]) or "&mdash;"
             status = e["status"]
             status_cell = f"`{status}`" if status != "active" else "active"
+            it = e["input_types"]
+            it_cell = ", ".join(str(t) for t in it) if it else "&mdash;"
             lines.append(
-                f"| [{e['title']}](derivations/{e['stem']}.md) | {status_cell} | {deps} |"
+                f"| [{e['title']}](derivations/{e['stem']}.md) | {status_cell} | {it_cell} | {deps} |"
             )
         lines.append("")
 

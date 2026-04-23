@@ -1,6 +1,7 @@
 ---
-kind: axiom
+kind: axiom_primitive
 status: active
+input_types: []
 depends_on: [integers]
 consequences: [stern_brocot, farey_sequence, three_dimensions]
 ---

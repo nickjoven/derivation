@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: []
 depends_on: [mediant, three_dimensions]
 consequences: [three_dimensions, minkowski_signature]
 citations:

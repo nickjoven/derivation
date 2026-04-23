@@ -1,6 +1,7 @@
 ---
-kind: axiom
+kind: axiom_primitive
 status: active
+input_types: []
 depends_on: []
 consequences: [circle_map, rational_field_equation]
 ---

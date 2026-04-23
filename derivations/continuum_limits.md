@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: []
 depends_on: [circle_map, rational_field_equation, fixed_point]
 consequences: [proof_A_gravity, proof_B_quantum]
 ---

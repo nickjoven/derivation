@@ -20,38 +20,41 @@ repositories, filtered to what would be taught.
 
 ## Recommended reading order
 
-The material is layered.  A new reader should traverse it in this
-order:
+Start with the [**inputs taxonomy**](derivations/inputs_taxonomy.md).
+It defines the six types of input to the framework and sets the
+discipline every later entry works under: *pitch is not amplitude,
+ratio is not scale, topology is not identification.*  Then:
 
-1. **Axioms (4).**  The irreducible primitives.
+1. **Axiomatic primitives (4).**  Mathematical, not physical.
    [`integers`](derivations/integers.md),
    [`mediant`](derivations/mediant.md),
    [`fixed_point`](derivations/fixed_point.md),
    [`parabola`](derivations/parabola.md).
-2. **Anchors (2).**  The observational inputs, one per sector.
-   [`hubble`](derivations/hubble.md) (cosmological),
-   [`vev`](derivations/vev.md) (particle).
-3. **Definitions.**  Named mathematical objects built from the axioms:
+2. **Amplitude anchors (2).**  Type 1 observational inputs.
+   [`hubble`](derivations/hubble.md) (cosmological register),
+   [`vev`](derivations/vev.md) (particle register).
+3. **Definitions.**  Named mathematical objects:
    [`circle_map`](derivations/circle_map.md),
    [`stern_brocot`](derivations/stern_brocot.md),
    [`farey_sequence`](derivations/farey_sequence.md),
    [`arnold_tongue`](derivations/arnold_tongue.md),
    [`klein_bottle`](derivations/klein_bottle.md),
    [`rational_field_equation`](derivations/rational_field_equation.md).
-4. **Theorems.**  Results with structural consequence:
+4. **Theorems.**
    [`three_dimensions`](derivations/three_dimensions.md),
    [`lie_group_characterization`](derivations/lie_group_characterization.md),
    [`minkowski_signature`](derivations/minkowski_signature.md),
    [`continuum_limits`](derivations/continuum_limits.md),
    [`duty_function`](derivations/duty_function.md),
-   [`farey_partition`](derivations/farey_partition.md),
-   [`hierarchy`](derivations/hierarchy.md).
-5. **Proof chains.**  End-to-end: primitives → Einstein, primitives →
-   Schrödinger, anchors → cosmological observables.  (Pending port.)
-6. **Predictions.**  Verified theorems matching observation to a
-   stated residual.  (Pending port.)
-7. **Open questions.**  Framed problems with explicit resolution
-   criteria.  (Pending port.)
+   [`farey_partition`](derivations/farey_partition.md) (consumes Type 3),
+   [`hierarchy`](derivations/hierarchy.md) (consumes Types 1 + 3).
+5. **Topology commitments, identification maps, phase labels,
+   universal constants.**  Types 3 – 6 of the taxonomy.  Added as
+   the proofs and predictions that need them come online.
+6. **Proof chains.**  Primitives → Einstein, primitives → Schrödinger,
+   anchors → cosmological observables.  (Pending port.)
+7. **Predictions.**  (Pending port.)
+8. **Open questions.**  (Pending port.)
 
 ## What's not in here
 

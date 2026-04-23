@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: []
 depends_on: [integers, mediant, fixed_point]
 consequences: [klein_bottle, duty_function, proof_A_gravity, proof_B_quantum, spatial_dimension]
 ---

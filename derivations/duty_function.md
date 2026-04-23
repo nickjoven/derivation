@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: []
 depends_on: [circle_map, arnold_tongue, farey_sequence, three_dimensions]
 consequences: [farey_partition, hierarchy]
 ---

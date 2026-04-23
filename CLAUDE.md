@@ -30,9 +30,24 @@ Every file in `derivations/` starts with:
 
 ```yaml
 ---
-kind: axiom | definition | lemma | theorem | proof | prediction | open_question
+kind: axiom_primitive
+    | amplitude_anchor
+    | topology_commitment
+    | identification
+    | phase_label
+    | universal_constant
+    | definition
+    | lemma
+    | theorem
+    | proof
+    | prediction
+    | open_question
 status: active | conjecture | archived
-depends_on: [file_a, file_b]    # other entries, by stem (no .md)
+input_types: [1, 3, 4]            # which of the six input types this
+                                  # entry consumes (see inputs_taxonomy.md).
+                                  # Empty list means pure mathematics —
+                                  # no physical input consumed.
+depends_on: [file_a, file_b]      # other entries, by stem (no .md)
 consequences: [file_c]            # optional reverse pointer
 observables:                      # present iff kind == prediction
   - name: <name>
@@ -43,6 +58,31 @@ citations:                        # external references (optional)
   - <arxiv id, DOI, or canonical URL>
 ---
 ```
+
+### Kinds
+
+Six kinds for *inputs* to the framework (see
+[`derivations/inputs_taxonomy.md`](derivations/inputs_taxonomy.md)):
+
+| Kind | Input type | Role |
+|------|------------|------|
+| `axiom_primitive` | (pre-type) | Mathematical primitive: integers, mediant, fixed-point, parabola.  Not a physical input; foundational math. |
+| `amplitude_anchor` | 1 | Observational scale anchor: `hubble`, `vev`.  Two total. |
+| `topology_commitment` | 3 | Ontological commitment: which mathematical object the substrate is (Klein quotient vs torus vs …). |
+| `identification` | 4 | Sector-to-mode assignment: which physical observable corresponds to which mode class. |
+| `phase_label` | 5 | Parity, torsion, orientation labels on the topology. |
+| `universal_constant` | 6 | Inherited from universal dynamics (KAM, golden torus): $\varphi$, $\sqrt 5$, $\delta_\text{MacKay}$, $\lambda_\text{unlock}$. |
+
+Six kinds for *derived content*:
+
+| Kind | Role |
+|------|------|
+| `definition` | Named mathematical object used by later entries. |
+| `lemma` | Intermediate result used in proofs. |
+| `theorem` | Result with a named structural or physical consequence. |
+| `proof` | End-to-end chain assembling lemmas and theorems into a major claim. |
+| `prediction` | Theorem whose value matches observation to a stated residual. |
+| `open_question` | Framed problem with no current solution.  Must name its resolution criterion. |
 
 Frontmatter is machine-readable: `scripts/build_index.py` and
 `scripts/build_manifest.py` both parse it.  A typo in frontmatter will
@@ -66,6 +106,22 @@ produce a validation error; the generators do not silently fix.
 - `open_question` entries do *not* need a closed chain, but must
   state their resolution criterion in a dedicated section.
 - Circular deps are rejected by the index builder.
+
+## Input-type crossings
+
+Every derivation declares, in `input_types`, which of the six
+meta-types it consumes.  If an entry's `input_types` is a strict
+*superset* of the union of its dependencies' `input_types`, the
+entry is introducing a new input — it must name the mechanism
+(a `topology_commitment`, `identification`, `phase_label`, or
+`amplitude_anchor` entry) that supplies the new input.  Algebraic
+manipulation alone does not introduce a new input type.
+
+This is the formalization of the rule that the
+[inputs taxonomy](derivations/inputs_taxonomy.md) makes explicit:
+pitch (Type 2) cannot be derived from other pitches;  amplitude
+(Type 1) cannot be derived from pitches or scores.  Type-crossings
+need named mechanisms.
 
 ## Substrate
 

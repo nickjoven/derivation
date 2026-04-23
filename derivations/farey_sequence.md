@@ -1,6 +1,7 @@
 ---
 kind: definition
 status: active
+input_types: []
 depends_on: [integers, mediant, stern_brocot]
 consequences: [farey_partition, arnold_tongue, duty_function]
 citations:

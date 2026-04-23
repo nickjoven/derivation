@@ -1,17 +1,28 @@
 # MANIFEST.yml
-# Generated from derivations/*.md frontmatter.  Do not edit by hand —
+# Generated from derivations/*.md frontmatter.  Do not edit by hand --
 # edit the source entries and re-run scripts/build_manifest.py.
+# For the taxonomy of input types, see derivations/inputs_taxonomy.md.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 19
+entries_scanned: 20
 free_parameters: 0
 free_functions: 0
-dimensionful_inputs: 2
+inputs:
+  dimensionful_anchors_count: 2
+  topology_commitments_count: 0
+  identification_maps_count: 0
+  phase_labels_count: 0
+  universal_constants_count: 0
+  axiom_primitives_count: 4
 anchors:
 - stem: hubble
   title: Hubble anchor
 - stem: vev
   title: Electroweak vacuum anchor
+topology_commitments: []
+identifications: []
+phase_labels: []
+universal_constants: []
 primitives:
 - stem: fixed_point
   title: Fixed point
@@ -23,3 +34,13 @@ primitives:
   title: Parabola
 predictions: []
 open_questions: []
+input_type_consumers:
+  type_1:
+  - hierarchy
+  type_2: []
+  type_3:
+  - farey_partition
+  - hierarchy
+  type_4: []
+  type_5: []
+  type_6: []

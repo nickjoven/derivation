@@ -1,6 +1,7 @@
 ---
 kind: definition
 status: active
+input_types: []
 depends_on: [integers, fixed_point, three_dimensions]
 consequences: [minkowski_signature, farey_partition, hierarchy, duty_function]
 ---

@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: [3]
 depends_on: [farey_sequence, klein_bottle]
 consequences: [hierarchy, dark_energy, baryon_fraction]
 ---

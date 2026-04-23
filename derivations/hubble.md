@@ -1,6 +1,7 @@
 ---
-kind: axiom
+kind: amplitude_anchor
 status: active
+input_types: []
 depends_on: []
 consequences: [hierarchy, mond_scale, vacuum_energy]
 citations:

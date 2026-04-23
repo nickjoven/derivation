@@ -1,6 +1,7 @@
 ---
 kind: definition
 status: active
+input_types: []
 depends_on: [integers, mediant]
 consequences: [farey_sequence, rational_field_equation, duty_function]
 ---

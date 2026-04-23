@@ -1,6 +1,7 @@
 ---
-kind: axiom
+kind: amplitude_anchor
 status: active
+input_types: []
 depends_on: []
 consequences: [higgs_mass, lepton_masses]
 citations:

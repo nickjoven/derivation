@@ -1,6 +1,7 @@
 ---
 kind: definition
 status: active
+input_types: []
 depends_on: [circle_map, parabola, farey_sequence]
 consequences: [duty_function, born_rule]
 citations:

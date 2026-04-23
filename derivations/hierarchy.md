@@ -1,6 +1,7 @@
 ---
 kind: theorem
 status: active
+input_types: [1, 3]
 depends_on: [klein_bottle, farey_partition, three_dimensions, hubble]
 consequences: [vacuum_energy, mond_scale]
 ---

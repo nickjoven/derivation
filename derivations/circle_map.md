@@ -1,6 +1,7 @@
 ---
 kind: definition
 status: active
+input_types: []
 depends_on: [integers, fixed_point]
 consequences: [arnold_tongue, duty_function, rational_field_equation, continuum_limits]
 citations:

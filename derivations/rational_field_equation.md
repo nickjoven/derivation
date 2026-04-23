@@ -1,6 +1,7 @@
 ---
 kind: definition
 status: active
+input_types: []
 depends_on: [integers, fixed_point, stern_brocot, arnold_tongue]
 consequences: [continuum_limits, proof_A_gravity, proof_B_quantum]
 ---
