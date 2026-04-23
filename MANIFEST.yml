@@ -1,0 +1,25 @@
+# MANIFEST.yml
+# Generated from derivations/*.md frontmatter.  Do not edit by hand —
+# edit the source entries and re-run scripts/build_manifest.py.
+
+generated_by: scripts/build_manifest.py
+entries_scanned: 7
+free_parameters: 0
+free_functions: 0
+dimensionful_inputs: 2
+anchors:
+- stem: hubble
+  title: Hubble anchor
+- stem: vev
+  title: Electroweak vacuum anchor
+primitives:
+- stem: fixed_point
+  title: Fixed point
+- stem: integers
+  title: Integers
+- stem: mediant
+  title: Mediant
+- stem: parabola
+  title: Parabola
+predictions: []
+open_questions: []
