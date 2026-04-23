@@ -1,6 +1,6 @@
 # Index
 
-Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **28**.  Regenerate via `python3 scripts/build_index.py`.
+Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **36**.  Regenerate via `python3 scripts/build_index.py`.
 
 ## Axiomatic primitives (mathematical) (4)
 
@@ -63,10 +63,18 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Proof B: primitives to the Schrödinger equation and the Born rule](derivations/proof_B_quantum.md) | active | 3 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `sl2r_manifold`, `proof_A_gravity` |
 | [Proof C: the bridge](derivations/proof_C_bridge.md) | active | 1, 3, 6 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `farey_sequence`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `klein_bottle`, `hubble`, `sl2r_manifold`, `klein_substrate`, `golden_ratio`, `farey_partition`, `hierarchy`, `dark_energy`, `mond_scale`, `proof_A_gravity` |
 
-## Predictions (2)
+## Predictions (10)
 
 | Entry | Status | Input types | Depends on |
 |-------|--------|-------------|------------|
+| [Baryon fraction](derivations/baryon_fraction.md) | active | 3 | `klein_substrate`, `farey_partition` |
+| [Born rule](derivations/born_rule.md) | active | 3 | `parabola`, `arnold_tongue`, `proof_B_quantum` |
 | [Dark-energy fraction](derivations/dark_energy.md) | active | 3 | `klein_substrate`, `farey_partition`, `farey_sequence` |
+| [Dark-matter fraction](derivations/dark_matter_fraction.md) | active | 3 | `klein_substrate`, `farey_partition` |
+| [Dark-matter to baryon ratio](derivations/dm_baryon_ratio.md) | active | 3 | `dark_matter_fraction`, `baryon_fraction`, `klein_substrate`, `farey_partition` |
+| [Planck-to-Hubble hierarchy](derivations/hierarchy_ratio.md) | active | 1, 3 | `hierarchy`, `klein_substrate`, `farey_partition`, `hubble`, `three_dimensions` |
+| [Lorentz symmetry](derivations/lorentz_symmetry.md) | active | 3 | `three_dimensions`, `minkowski_signature`, `sl2r_manifold`, `lie_group_characterization` |
 | [MOND acceleration scale](derivations/mond_scale.md) | active | 1, 3, 6 | `hubble`, `klein_substrate`, `farey_partition`, `hierarchy`, `golden_ratio`, `rational_field_equation`, `continuum_limits` |
+| [Spatial dimension](derivations/spatial_dimension.md) | active | 3 | `three_dimensions`, `sl2r_manifold`, `lie_group_characterization` |
+| [Vacuum energy](derivations/vacuum_energy.md) | active | 1, 3 | `hierarchy`, `hierarchy_ratio`, `farey_partition`, `hubble`, `klein_substrate` |
 
