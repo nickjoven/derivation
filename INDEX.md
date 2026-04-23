@@ -1,6 +1,6 @@
 # Index
 
-Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **22**.  Regenerate via `python3 scripts/build_index.py`.
+Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **23**.  Regenerate via `python3 scripts/build_index.py`.
 
 ## Axiomatic primitives (mathematical) (4)
 
@@ -48,9 +48,10 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Minkowski signature](derivations/minkowski_signature.md) | active | &mdash; | `three_dimensions`, `klein_bottle`, `lie_group_characterization` |
 | [Three dimensions](derivations/three_dimensions.md) | active | &mdash; | `integers`, `mediant`, `fixed_point` |
 
-## Proof chains (1)
+## Proof chains (2)
 
 | Entry | Status | Input types | Depends on |
 |-------|--------|-------------|------------|
 | [Proof A: primitives to the Einstein field equations](derivations/proof_A_gravity.md) | active | 3 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `minkowski_signature`, `sl2r_manifold` |
+| [Proof B: primitives to the Schrödinger equation and the Born rule](derivations/proof_B_quantum.md) | active | 3 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `sl2r_manifold`, `proof_A_gravity` |
 

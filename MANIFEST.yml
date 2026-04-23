@@ -4,7 +4,7 @@
 # For the taxonomy of input types, see derivations/inputs_taxonomy.md.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 22
+entries_scanned: 23
 free_parameters: 0
 free_functions: 0
 inputs:
@@ -44,6 +44,7 @@ input_type_consumers:
   - farey_partition
   - hierarchy
   - proof_A_gravity
+  - proof_B_quantum
   - sl2r_manifold
   type_4: []
   type_5: []
