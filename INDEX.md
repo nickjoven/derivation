@@ -76,10 +76,10 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | Entry | Status | Input types | Depends on |
 |-------|--------|-------------|------------|
 | [Anomaly cancellation](derivations/anomaly_cancellation.md) | active | 3, 4 | `klein_substrate`, `gauge_identification`, `gell_mann_nishijima`, `gauge_group` |
-| [Baryon fraction](derivations/baryon_fraction.md) | active | 3 | `klein_substrate`, `farey_partition` |
+| [Baryon fraction](derivations/baryon_fraction.md) | active | 3, 4 | `klein_substrate`, `klein_bottle`, `farey_partition`, `gell_mann_nishijima` |
 | [Born rule](derivations/born_rule.md) | active | 3 | `parabola`, `arnold_tongue`, `proof_B_quantum` |
 | [Dark-energy fraction](derivations/dark_energy.md) | active | 3 | `klein_substrate`, `farey_partition`, `farey_sequence` |
-| [Dark-matter fraction](derivations/dark_matter_fraction.md) | active | 3 | `klein_substrate`, `farey_partition` |
+| [Dark-matter fraction](derivations/dark_matter_fraction.md) | active | 3, 4 | `klein_substrate`, `klein_bottle`, `farey_partition`, `gell_mann_nishijima` |
 | [Dark-matter to baryon ratio](derivations/dm_baryon_ratio.md) | active | 3 | `dark_matter_fraction`, `baryon_fraction`, `klein_substrate`, `farey_partition` |
 | [Standard Model gauge group](derivations/gauge_group.md) | active | 3, 4 | `klein_substrate`, `gauge_identification`, `klein_bottle` |
 | [Planck-to-Hubble hierarchy](derivations/hierarchy_ratio.md) | active | 1, 3 | `hierarchy`, `klein_substrate`, `farey_partition`, `hubble`, `three_dimensions` |

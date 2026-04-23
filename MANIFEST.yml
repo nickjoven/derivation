@@ -56,11 +56,12 @@ predictions:
   title: Baryon fraction
   input_types:
   - 3
+  - 4
   observables:
   - name: "Baryon fraction \u03A9_b"
     predicted: "1 / 19 \u2248 0.05263"
-    observed: "0.0493 \xB1 0.0006 (Planck 2018)"
-    residual: "~5% (~5.6\u03C3)"
+    observed: "0.0493 \xB1 0.0003 (Planck 2018)"
+    residual: "~6.7% (~11\u03C3)"
 - stem: born_rule
   title: Born rule
   input_types:
@@ -84,6 +85,7 @@ predictions:
   title: Dark-matter fraction
   input_types:
   - 3
+  - 4
   observables:
   - name: "Dark-matter fraction \u03A9_DM"
     predicted: "5 / 19 \u2248 0.2632"
@@ -218,7 +220,9 @@ input_type_consumers:
   - yang_mills
   type_4:
   - anomaly_cancellation
+  - baryon_fraction
   - baryon_sector_identification
+  - dark_matter_fraction
   - gauge_group
   - gauge_identification
   - gell_mann_nishijima

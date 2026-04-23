@@ -28,6 +28,64 @@ denominator classes $q_2 = 2$ and $q_3 = 3$ and fixes the
 surviving-mode table.  Which physical sector maps to each feature
 is the framework's free content at this level.
 
+## Two scale snapshots
+
+The table above is the *high-scale* reading: above electroweak
+symmetry breaking, the antiperiodic direction's $\mathbb{Z}_2$
+monodromy is identified with the $\mathbb{Z}_2$ subgroup of the
+unbroken $\mathrm{SU}(2)_L$.  Its connection-form construction
+(the Klein bottle as a non-trivial $\mathbb{Z}_2$-bundle over
+$S^1$, with holonomy $-1 \in \mathbb{Z}_2 \subset \mathrm{SU}(2)$)
+is external: it is established in the harmonics entry
+`klein_connection.md`, which is the load-bearing source for the
+antiperiodic $\leftrightarrow$ $\mathrm{SU}(2)_L$ identification
+used here.
+
+Below EWSB the unbroken gauge group is
+$\mathrm{SU}(3) \times \mathrm{U}(1)_\text{em}$, and the same
+$\mathbb{Z}_2$ monodromy re-identifies with the $\mathbb{Z}_2$
+subgroup of $\mathrm{U}(1)_\text{em}$ (the unique order-2
+subgroup $\{+1, -1\}$).  This is the post-EWSB reading: the
+Klein bottle's topological residue now realizes the center
+$\mathbb{Z}_2 \subset \mathrm{U}(1)_\text{em}$ rather than a
+subgroup of a non-abelian factor.  The load-bearing source is
+the harmonics entry `gauge_dictionary.md`, which promotes the
+$\mathbb{Z}_2 \hookrightarrow \mathrm{U}(1)$ step from
+identification to definition ($H^1(K^2; \mathbb{Z}_2)$ is
+non-trivial and carries a canonical generator; the unique
+$\mathbb{Z}_2$ subgroup of $\mathrm{U}(1)$ is $\{\pm 1\}$; the
+composition is a principal $\mathrm{U}(1)$-bundle class by
+construction).
+
+The scale-snapshot relationship:
+
+- **High-scale** ($E > v$): $\mathbb{Z}_2 \hookrightarrow
+  \mathrm{SU}(2)_L$ (the antiperiodic monodromy sits inside the
+  weak-isospin $\mathrm{SU}(2)$).
+- **Post-EWSB** ($E < v$): $\mathbb{Z}_2 \hookrightarrow
+  \mathrm{U}(1)_\text{em}$ (after the Higgs VEV selects a
+  direction, the residual unbroken subgroup of
+  $\mathrm{SU}(2)_L \times \mathrm{U}(1)_Y$ containing the
+  $\mathbb{Z}_2$ monodromy is $\mathrm{U}(1)_\text{em}$).
+- Both readings are the *same* topological $\mathbb{Z}_2$: the
+  Klein bottle's antiperiodic class $H^1(K^2; \mathbb{Z}_2)$,
+  viewed under two different ambient Lie-group containers
+  (the high-scale $\mathrm{SU}(2)_L$ and the low-scale
+  $\mathrm{U}(1)_\text{em}$).  The Higgs mechanism does not
+  change the monodromy; it changes which Lie group contains
+  the $\{\pm 1\}$ subgroup that carries it.
+
+Consequence for the EM-coupling criterion used downstream: the
+post-EWSB $\mathbb{Z}_2 \hookrightarrow \mathrm{U}(1)_\text{em}$
+reading is what licenses the "Klein-singlet (symmetric under
+antipodal action) $\Rightarrow$ single-valued global phase
+$\Rightarrow$ definite EM charge" step used in
+[`baryon_fraction`](baryon_fraction.md) and
+[`dark_matter_fraction`](dark_matter_fraction.md).  The
+antisymmetric (sign-rep) eigenmode picks up the generator of
+the $\{\pm 1\} \subset \mathrm{U}(1)_\text{em}$ subgroup around
+the Klein loop and therefore has no single-valued EM charge.
+
 ## Forced vs free
 
 **Forced by [`klein_substrate`](klein_substrate.md):**
