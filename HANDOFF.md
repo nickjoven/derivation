@@ -14,45 +14,57 @@ of [`harmonics`](https://github.com/nickjoven/harmonics) and
 under the editorial filter "if it wouldn't be taught, it doesn't go
 here" (see `CLAUDE.md`).
 
-Content present (22 entries):
+Content present (44 entries):
 
 - 4 axiomatic primitives (mathematical).
 - 2 amplitude anchors (observational, Type 1 of the inputs taxonomy).
-- 1 topology commitment (`sl2r_manifold`, the gravitational
-  substrate; introduced with Proof A).
+- 2 topology commitments (Type 3): `sl2r_manifold` (gravitational
+  substrate) and `klein_substrate` (cosmological and gauge
+  substrate).
+- 1 identification (Type 4): `gauge_identification`.
+- 1 universal constant (Type 6): `golden_ratio`.
 - 7 definitions.
-- 7 theorems.
-- 1 proof chain (`proof_A_gravity`, 8 propositions primitives →
-  Einstein field equations).
+- 8 theorems.
+- 3 proof chains: `proof_A_gravity` (primitives → Einstein),
+  `proof_B_quantum` (primitives → Schrödinger + Born), `proof_C_bridge`
+  (Λ → a₀ via Kuramoto critical coupling).
+- 12 predictions with observable metadata: `dark_energy`,
+  `mond_scale`, `spatial_dimension`, `lorentz_symmetry`, `born_rule`,
+  `hierarchy_ratio`, `vacuum_energy`, `dark_matter_fraction`,
+  `baryon_fraction`, `dm_baryon_ratio`, `gauge_group`,
+  `anomaly_cancellation`.
+- 4 open questions with explicit resolution criteria:
+  `v_over_MP_gap`, `anchor_audit`, `baryon_sector_identification`,
+  `topology_forcing`.
 - 1 foundations document (`inputs_taxonomy.md`) — the six-type input
-  scheme (amplitude / ratio / topology / identification / phase /
-  universal), with the musical analogy and the composition rules.
+  scheme.
 
-Schema-ready but unpopulated:
-`identification`, `phase_label`, `universal_constant`.  These will be
-populated as proofs and predictions that consume them are ported.
+Schema-ready but unpopulated: `phase_label`.  (Consumer pending; no
+prediction currently needs an explicit Type 5 entry.)
 
 ## What's next
 
 Ordered queue, one commit per item unless noted:
 
-1. `proof_B_quantum.md` — 6-proposition Schrödinger + Born chain,
-   shares P1–P5 with Proof A at the dynamical level (different
-   coupling regime $K < 1$).  Reuses the `sl2r_manifold`
-   topology_commitment.
-2. `proof_C_bridge.md` — 7-proposition Λ → a₀ chain
-   (proslambenomenos source).
-3. First `identification` entry (gauge sector-to-mode mapping).  Will
-   also introduce a Klein-quotient topology_commitment distinct from
-   `sl2r_manifold`.
-4. Predictions layer (~15 entries).
-5. Open questions (at least `v_over_MP_gap`, `anchor_audit`).
-6. Proslambenomenos-specific lemmas (Kuramoto–Einstein mapping,
-   Lyapunov uniqueness, Renzo's Rule).
-7. Substrate seeding in `.ket/`.
-8. Pages workflow (optional, defer).
+1. Remaining predictions with new Type 6 infrastructure:
+   - `strong_cp` (θ = 0 from Pin+(3) non-orientability)
+   - `n_efolds`, `spectral_tilt` (need the MacKay exponent δ and
+     possibly √5 as companion Type 6 constants)
+   - `uncertainty` (ℏ from Proof B's Q4 diffusion coefficient)
+   - Yang–Mills dynamics as a standalone theorem (Utiyama 1956).
+2. Cosmological-sector identification entry (if
+   `baryon_sector_identification` open question resolves in
+   direction (1) or (2)).  Would formalize the {13, 5, 1} ↔
+   {vacuum, DM, baryons} assignment.
+3. Proslambenomenos extras: `kuramoto_einstein_mapping`,
+   `lyapunov_uniqueness`, `renzos_rule_from_kuramoto`.  Port only
+   what survives the filter.
+4. Substrate seeding: `ket --home .ket init`, `ket put` each entry,
+   `ket dag create` lineage.  Import foreign CIDs from harmonics
+   for entries with prior substrate history.
+5. Pages workflow (optional, defer).
 
-## Register
+## Register, once more
 
 Dry, not over-reaching.  Illustrative analogies OK; selling the
 result is not.  Every theorem names where its proof load sits and
@@ -61,8 +73,9 @@ from `harmonics` (Class 1 / Class 3 numerology, fitted corrections
 like `+8/F_10²`, `+1/228`) stays in harmonics's git history and does
 not port here.
 
-The exemplar is `derivations/three_dimensions.md`.  Match its
-register on every new entry.
+The exemplars are `derivations/three_dimensions.md` (theorem),
+`derivations/proof_A_gravity.md` (proof), and
+`derivations/dark_energy.md` (prediction).
 
 ## How to resume
 

@@ -4,7 +4,7 @@
 # For the taxonomy of input types, see derivations/inputs_taxonomy.md.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 40
+entries_scanned: 44
 free_parameters: 0
 free_functions: 0
 inputs:
@@ -162,13 +162,23 @@ predictions:
     predicted: "\u039B \u2113_P^2 = 13^(-108) / 12 \u2248 4.4e-122"
     observed: "\u039B \u2113_P^2 \u2248 (1.1e-52 m^-2) * (1.616e-35 m)^2 \u2248 2.9e-122"
     residual: "~50% on the bare number (i.e., 0.1\u20130.2% in the log-exponent)"
-open_questions: []
+open_questions:
+- stem: anchor_audit
+  title: Anchor audit
+- stem: baryon_sector_identification
+  title: Cosmological-sector identification for the {5, 1} orbits
+- stem: topology_forcing
+  title: Can the topology commitments be forced?
+- stem: v_over_MP_gap
+  title: The electroweak-to-Planck gap
 input_type_consumers:
   type_1:
+  - anchor_audit
   - hierarchy
   - hierarchy_ratio
   - mond_scale
   - proof_C_bridge
+  - v_over_MP_gap
   - vacuum_energy
   type_2: []
   type_3:
@@ -191,9 +201,11 @@ input_type_consumers:
   - proof_C_bridge
   - sl2r_manifold
   - spatial_dimension
+  - topology_forcing
   - vacuum_energy
   type_4:
   - anomaly_cancellation
+  - baryon_sector_identification
   - gauge_group
   - gauge_identification
   - gell_mann_nishijima

@@ -1,6 +1,6 @@
 # Index
 
-Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **40**.  Regenerate via `python3 scripts/build_index.py`.
+Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **44**.  Regenerate via `python3 scripts/build_index.py`.
 
 ## Axiomatic primitives (mathematical) (4)
 
@@ -86,4 +86,13 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [MOND acceleration scale](derivations/mond_scale.md) | active | 1, 3, 6 | `hubble`, `klein_substrate`, `farey_partition`, `hierarchy`, `golden_ratio`, `rational_field_equation`, `continuum_limits` |
 | [Spatial dimension](derivations/spatial_dimension.md) | active | 3 | `three_dimensions`, `sl2r_manifold`, `lie_group_characterization` |
 | [Vacuum energy](derivations/vacuum_energy.md) | active | 1, 3 | `hierarchy`, `hierarchy_ratio`, `farey_partition`, `hubble`, `klein_substrate` |
+
+## Open questions (4)
+
+| Entry | Status | Input types | Depends on |
+|-------|--------|-------------|------------|
+| [Anchor audit](derivations/anchor_audit.md) | `conjecture` | 1 | `hubble`, `vev`, `inputs_taxonomy` |
+| [Cosmological-sector identification for the {5, 1} orbits](derivations/baryon_sector_identification.md) | `conjecture` | 4 | `farey_partition`, `klein_substrate`, `baryon_fraction`, `dark_matter_fraction`, `gauge_identification` |
+| [Can the topology commitments be forced?](derivations/topology_forcing.md) | `conjecture` | 3 | `sl2r_manifold`, `klein_substrate`, `inputs_taxonomy` |
+| [The electroweak-to-Planck gap](derivations/v_over_MP_gap.md) | `conjecture` | 1 | `hubble`, `vev`, `hierarchy`, `hierarchy_ratio` |
 
