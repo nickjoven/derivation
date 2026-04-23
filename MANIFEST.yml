@@ -3,7 +3,7 @@
 # edit the source entries and re-run scripts/build_manifest.py.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 7
+entries_scanned: 19
 free_parameters: 0
 free_functions: 0
 dimensionful_inputs: 2

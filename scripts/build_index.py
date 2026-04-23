@@ -23,6 +23,7 @@ OUT_PATH = ROOT / "INDEX.md"
 
 KIND_ORDER = [
     "axiom",
+    "anchor",
     "definition",
     "lemma",
     "theorem",
@@ -32,7 +33,8 @@ KIND_ORDER = [
 ]
 
 KIND_HEADINGS = {
-    "axiom": "Axioms",
+    "axiom": "Axioms (mathematical primitives)",
+    "anchor": "Anchors (observational inputs)",
     "definition": "Definitions",
     "lemma": "Lemmas",
     "theorem": "Theorems",
@@ -40,6 +42,13 @@ KIND_HEADINGS = {
     "prediction": "Predictions",
     "open_question": "Open questions",
 }
+
+# Axiom entries whose stem is in this set are displayed as anchors
+# rather than as mathematical primitives.  The two categories share
+# the same `kind: axiom` frontmatter because neither has a proof; the
+# distinction is whether the input is mathematical (integers, mediant,
+# ...) or observational (hubble, vev).
+ANCHOR_STEMS = {"hubble", "vev"}
 
 
 FM_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
@@ -68,7 +77,12 @@ def parse_entry(path: Path) -> dict:
 def render(entries: list[dict]) -> str:
     by_kind: dict[str, list[dict]] = defaultdict(list)
     for e in entries:
-        by_kind[e["kind"]].append(e)
+        # Split axiom entries into mathematical (axiom) and
+        # observational (anchor) buckets for display.
+        if e["kind"] == "axiom" and e["stem"] in ANCHOR_STEMS:
+            by_kind["anchor"].append(e)
+        else:
+            by_kind[e["kind"]].append(e)
     for arr in by_kind.values():
         arr.sort(key=lambda e: e["stem"])
 
