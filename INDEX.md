@@ -1,6 +1,6 @@
 # Index
 
-Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **20**.  Regenerate via `python3 scripts/build_index.py`.
+Generated view of every entry in `derivations/`, grouped by classification.  Total entries: **22**.  Regenerate via `python3 scripts/build_index.py`.
 
 ## Axiomatic primitives (mathematical) (4)
 
@@ -17,6 +17,12 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 |-------|--------|-------------|------------|
 | [Hubble anchor](derivations/hubble.md) | active | &mdash; | &mdash; |
 | [Electroweak vacuum anchor](derivations/vev.md) | active | &mdash; | &mdash; |
+
+## Topology commitments (Type 3) (1)
+
+| Entry | Status | Input types | Depends on |
+|-------|--------|-------------|------------|
+| [SL(2, R) manifold commitment](derivations/sl2r_manifold.md) | active | 3 | `three_dimensions`, `lie_group_characterization` |
 
 ## Definitions (7)
 
@@ -41,4 +47,10 @@ Generated view of every entry in `derivations/`, grouped by classification.  Tot
 | [Lie group characterization](derivations/lie_group_characterization.md) | active | &mdash; | `mediant`, `three_dimensions` |
 | [Minkowski signature](derivations/minkowski_signature.md) | active | &mdash; | `three_dimensions`, `klein_bottle`, `lie_group_characterization` |
 | [Three dimensions](derivations/three_dimensions.md) | active | &mdash; | `integers`, `mediant`, `fixed_point` |
+
+## Proof chains (1)
+
+| Entry | Status | Input types | Depends on |
+|-------|--------|-------------|------------|
+| [Proof A: primitives to the Einstein field equations](derivations/proof_A_gravity.md) | active | 3 | `integers`, `mediant`, `fixed_point`, `parabola`, `circle_map`, `stern_brocot`, `arnold_tongue`, `rational_field_equation`, `continuum_limits`, `three_dimensions`, `lie_group_characterization`, `minkowski_signature`, `sl2r_manifold` |
 

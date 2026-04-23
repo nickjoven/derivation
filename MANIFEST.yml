@@ -4,12 +4,12 @@
 # For the taxonomy of input types, see derivations/inputs_taxonomy.md.
 
 generated_by: scripts/build_manifest.py
-entries_scanned: 20
+entries_scanned: 22
 free_parameters: 0
 free_functions: 0
 inputs:
   dimensionful_anchors_count: 2
-  topology_commitments_count: 0
+  topology_commitments_count: 1
   identification_maps_count: 0
   phase_labels_count: 0
   universal_constants_count: 0
@@ -19,7 +19,9 @@ anchors:
   title: Hubble anchor
 - stem: vev
   title: Electroweak vacuum anchor
-topology_commitments: []
+topology_commitments:
+- stem: sl2r_manifold
+  title: SL(2, R) manifold commitment
 identifications: []
 phase_labels: []
 universal_constants: []
@@ -41,6 +43,8 @@ input_type_consumers:
   type_3:
   - farey_partition
   - hierarchy
+  - proof_A_gravity
+  - sl2r_manifold
   type_4: []
   type_5: []
   type_6: []
