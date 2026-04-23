@@ -1,0 +1,48 @@
+---
+kind: prediction
+status: active
+input_types: [3]
+depends_on: [dark_matter_fraction, baryon_fraction, klein_substrate, farey_partition]
+consequences: []
+observables:
+  - name: Dark-matter to baryon ratio Ω_DM / Ω_b
+    predicted: 5 / 1 = 5
+    observed: 5.37 ± 0.07 (Planck 2018)
+    residual: ~7% (~5σ)
+citations:
+  - "Planck Collaboration, Cosmological parameters (A&A 641:A6, 2020)"
+---
+
+# Dark-matter to baryon ratio
+
+## Statement
+
+$$\frac{\Omega_\text{DM}}{\Omega_b} \;=\; \frac{5}{1} \;=\; 5.$$
+
+Planck 2018 reports $\Omega_\text{DM} / \Omega_b = 5.37 \pm 0.07$;
+residual $\sim 7\%$.
+
+## Derivation
+
+Ratio of [`dark_matter_fraction`](dark_matter_fraction.md) to
+[`baryon_fraction`](baryon_fraction.md).  Structural: inherits
+from the $6 = 5 + 1$ split of the unlocked budget under the
+secondary Klein-XOR parity.
+
+## Observational status
+
+The $\sim 7\%$ residual is dominated by the $5\%$ residual on
+$\Omega_b$ (the dark-matter fraction alone agrees at
+$\sim 0.2\sigma$).  The tension here is a consequence of the
+baryon-fraction tension, not an independent one.
+
+## Remarks
+
+- The ratio prediction is $\mathbb{Z}_+$-valued: $5$, exact.  The
+  observation is a decimal number: $5.37$.  The gap is probably
+  in the identification of which cosmological sector the
+  singleton orbit represents.  See
+  [`baryon_fraction`](baryon_fraction.md) §Observational status.
+- Pending an identification-layer entry clarifying the
+  baryon–singleton correspondence, this prediction is flagged as
+  the second-largest residual after `baryon_fraction`.
