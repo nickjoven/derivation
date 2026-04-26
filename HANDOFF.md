@@ -60,9 +60,14 @@ Ordered queue, one commit per item unless noted:
 2. Cosmological-sector identification entry, contingent on
    `baryon_sector_identification` open question resolving in
    direction (1) or (2).  Would formalize the {13, 5, 1} ↔
-   {vacuum, DM, baryons} assignment and convert the 5.6σ
+   {vacuum, DM, baryons} assignment and convert the ~11σ
    baryon-fraction residual into either a structural prediction
-   or a revised identification.
+   or a revised identification.  Direction (1) is now under
+   upstream activity in harmonics: a w_+ = 13/14 recognize-mode
+   closure at q = 14 is recorded in the open-question entry's
+   "Upstream activity" section with three named interpretive
+   caveats; closing those caveats is what would lift it to a
+   textbook prediction.
 3. Pages workflow (optional, defer).
 4. Cross-repo CID imports from harmonics for entries whose
    structural content was stabilized there first

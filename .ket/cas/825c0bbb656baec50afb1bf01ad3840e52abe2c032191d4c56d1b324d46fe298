@@ -132,13 +132,11 @@ The upstream files name three places where the load sits:
 
 These caveats are why the construction is labelled
 "Class 5 in recognize mode" upstream and is not promoted here.
-Closing each of (1)-(3) — a substrate-Lagrangian derivation of
-the lock-in attractor, a generic local-linearity argument, and a
-formal statement of the closest-grain quantization rule — would
-convert it from a candidate resolution under direction (1) of the
-criterion above into a textbook-quality derivation.  Until then,
-the standing prediction in this repo remains $\Omega_b = 1/19$,
-with the $\sim 11 \sigma$ residual documented in
+Removing any of (1)-(3) would convert it from a candidate
+resolution under direction (1) of the criterion above into a
+textbook-quality derivation.  Until then, the standing
+prediction in this repo remains $\Omega_b = 1/19$, with the
+$\sim 11 \sigma$ residual documented in
 [`baryon_fraction`](baryon_fraction.md).
 
 ## Why this matters
